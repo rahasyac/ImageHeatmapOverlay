@@ -1,28 +1,27 @@
-# Image Heatmap Overlay with Smooth Blending
+# TileVision
 
-## Project Overview
-This project applies a heatmap overlay to highlight key areas of an image while ensuring smooth blending and minimal noise. The goal is to create a visually meaningful and accurate heat map representation.
+TileVision is a Python project that uses deep learning to generate heatmaps highlighting object presence within an image. The image is broken into smaller tiles, and a pretrained VGG16-based model predicts the likelihood of an object (e.g., a cat) in each tile. These predictions are then combined into a heatmap to visually highlight important regions.
+
+---
 
 ## Features
-- Highlights meaningful areas of interest using a heatmap.  
-- Ensures smooth edges without harsh noise.  
-- Balances blending to avoid overpowering or fading.  
-- Maintains image clarity and visual appeal.
 
-## How It Works
-1. Load the image – The input image is processed.  
-2. Generate the heatmap – The heatmap is applied based on computed intensity regions.  
-3. Blend the overlay – The heatmap is integrated smoothly with the original image.  
-4. Final enhancements – Noise is reduced, blending is adjusted, and edges are refined.  
+- Breaks images into tiles for localized analysis  
+- Uses pretrained VGG16 convolutional base for feature extraction  
+- Predicts object presence per tile using a classification model  
+- Generates heatmaps from tile predictions to visualize hot spots  
+- Supports regression model for bounding box prediction (optional)  
+- Visualization with Matplotlib to display heatmaps  
+- Saves heatmap as an image file for further use
 
-## Installation & Usage
-### Prerequisites
-- Python 3.x  
-- OpenCV (`pip install opencv-python`)  
-- Matplotlib (`pip install matplotlib`)  
-- NumPy (`pip install numpy`)  
+---
 
-### Run the Code
+## Installation
+
+Make sure you have Python 3 and install dependencies:
+
+```bash
+pip install numpy opencv-python tensorflow matplotlib
 ```bash
 python apply_heatmap.py --input your_image.jpg --output heatmap_output.jpg
 
