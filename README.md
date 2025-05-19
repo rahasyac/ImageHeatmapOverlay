@@ -15,11 +15,6 @@ This project applies a heatmap overlay to highlight key areas of an image while 
 3. Blend the overlay – The heatmap is integrated smoothly with the original image.  
 4. Final enhancements – Noise is reduced, blending is adjusted, and edges are refined.  
 
-## Sample Results
-| Original Image | Heatmap | Heatmap Overlay | 
-|---------------|---------|----------------| 
-| ![Original](images/original_cat.jpg) | ![Heatmap](images/heatmap.jpg) | ![Overlay](images/heatmap_overlay.jpg) | 
-
 ## Installation & Usage
 ### Prerequisites
 - Python 3.x  
