@@ -1,4 +1,4 @@
-# Heatmap Overlay for Image Analysis
+# Image Heatmap Overlay with Smooth Blending
 
 ## Project Overview
 This project applies a heatmap overlay to highlight key areas of an image while ensuring smooth blending and minimal noise. The goal is to create a visually meaningful and accurate heat map representation.
