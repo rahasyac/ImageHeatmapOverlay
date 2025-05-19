@@ -10,7 +10,7 @@ TileVision is a Python project that uses deep learning to generate heatmaps high
 - Uses pretrained VGG16 convolutional base for feature extraction  
 - Predicts object presence per tile using a classification model  
 - Generates heatmaps from tile predictions to visualize hot spots  
-- Supports regression model for bounding box prediction (optional)  
+- Supports regression model for bounding box prediction 
 - Visualization with Matplotlib to display heatmaps  
 - Saves heatmap as an image file for further use
 
